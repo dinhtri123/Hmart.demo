@@ -1,0 +1,17 @@
+$colorPrimary: #266bf9;
+$dark: #252525;
+$sliver: #c4d4d3;
+$white:#fff;
+$black: #111;
+
+@mixin display($justify, $align) {
+    display:flex;
+    justify-content: $justify;
+    align-items: $align;
+}
+@mixin display_dir($justify_dir, $align_dir){
+    display:flex;
+    flex-direction: column;
+    justify-content: $justify_dir;
+    align-items: $align_dir;
+}

@@ -1,0 +1,43 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    max-width:1400px;
+    margin:auto;
+    background:$white;
+    line-height: 1;
+}
+.container{
+    max-width: 1200px;
+    height:100%;
+    padding:0px 15px;
+    margin:auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+button, input{
+    border:none;
+    outline:none;
+}
+@media screen and ( max-width: 974px) {
+    .container{
+        max-width:690px;
+    }
+}
+@media screen and ( max-width: 769px) {
+    .container{
+        max-width:540px !important;
+    }
+}
+.main{
+    width:100%;
+    height:auto;
+}
