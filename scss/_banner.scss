@@ -31,10 +31,15 @@
             font-size:18px;
             color:$white;
             font-weight: 550;
-            
+            transition:0.2s linear;
+            &:hover{
+                transform:translateY(-3px)
+            }
         }
     }
 }
+
+
 @media screen and (max-width: 769px) {
     .banner{
         height:350px;
@@ -54,7 +59,7 @@
         font-size: 24px;
     }
     .banner__content h3{
-        font-size:32px;
+        font-size:30px;
     }
     .banner__content .btn__fashion{
         width:180px;

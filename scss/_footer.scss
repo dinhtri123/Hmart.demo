@@ -1,0 +1,170 @@
+.footer{
+    background:#f2f8fd;
+    width:100%;
+    &__content{
+        width:100%;
+        padding:50px 0px;
+        @include display(space-between, flex-start);
+        flex-wrap: wrap;
+    }
+    &__desc, &__contact{
+        width:30%;
+        height:auto;
+        @include display_dir(flex-start, flex-start);
+        &--logo{
+            width:100%;
+            margin-bottom:20px;
+            b{
+                color:#323232;
+                font-weight:500;
+            }
+            a{
+                color:$white;
+                font-size: 38px;
+                font-weight:450;
+            }
+            &::first-letter{
+                color:$colorPrimary;
+                font-weight:600;
+            }
+        }
+        h3{
+            width:100%;
+            font-size:24px;
+            color: #323232;
+            font-weight:450;
+            margin-bottom:20px;
+            height:38px;
+            line-height:38px;
+        }
+        p{
+            width:90%;
+            font-size:16px;
+            line-height:2;
+        }
+        &--icon{
+            margin-top:20px;
+            @include display(flex-start, center);
+            width:100%;
+            height:36px;
+            .face, .what, .twitter, .insta{
+                margin-right: 8px;
+                border-radius:4px;
+                width:36px;
+                height:36px;
+                background: #5d5d5d;
+                @include display(center, center);
+                transition:0.2s linear;
+                cursor: pointer;
+                i{
+                    font-size:16px;
+                    color:$white;
+                }
+                &:hover{
+                    background:$colorPrimary;
+                    transform:translateY(-3px);
+                }
+            }
+        }
+        &--infor{
+            width:100%;
+            @include display_dir(flex-start, flex-start);
+            span{
+                margin-bottom: 15px;
+                font-weight:600;
+                a{
+                    color:$black;
+                    transition:.2s linear;
+                    font-weight: 400;
+                    &:hover{
+                        color:$colorPrimary;
+                    }
+                }
+            }
+        }
+    }
+    &__service, &__account{
+        width:20%;
+        height:100%;
+        @include display_dir(flex-start, flex-start);
+        & > h3{
+            line-height:38px;
+            width:100%;
+            height:38px;
+            font-size:24px;
+            color: #323232;
+            font-weight:450;
+            margin-bottom:20px;
+        }
+        ul{
+            width:100%;
+            li{
+                width:100%;
+                margin-bottom:15px;
+                a{
+                    width:100%;
+                    color:$black;
+                    font-size:16px;
+                    transition:0.2s linear;
+                }
+                &:hover > a{
+                    padding-left:8px;
+                    color:$colorPrimary;
+                }
+            }
+            
+        }
+    }
+    &__bottom{
+        width:100%;
+        padding:25px 0px;
+        text-align:center;
+        font-size:16px;
+        background:#e2f2ff;
+        letter-spacing: 0.8px;
+        color:#605d53;
+        b{
+            color:#4d4d53;
+        }
+    }
+}
+@media screen and (max-width: 999px) {
+    .footer__desc, .footer__service, .footer__account, .footer__contact{
+        width:50%;
+        
+    }
+    .footer__account, .footer__contact{
+        margin-top:50px;
+    }
+}
+@media screen and (max-width:769px) {
+    .footer__desc, .footer__contact{
+        width:100%;
+    }
+    .footer__service{
+        margin-top:50px;
+    }
+    .footer__desc p, .footer__contact p{
+        width:100%;
+    }
+    .sticky__top {
+        display: none;
+        position: fixed;
+        right: 10px;
+        bottom: 50px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background: #266bf9;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:339px) {
+    .footer__service, .footer__account{
+        width:100%;
+    }
+    .footer__bottom{
+        font-size: 14px;
+    }
+}

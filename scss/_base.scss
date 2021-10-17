@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
 }
 body{
-    max-width:1400px;
     margin:auto;
     background:$white;
     line-height: 1;
@@ -40,4 +39,21 @@ button, input{
 .main{
     width:100%;
     height:auto;
+}
+.sticky__top{
+    display:none;
+    position:fixed;
+    right:20px;
+    bottom: 70px;
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:$colorPrimary;
+    line-height:50px;
+    text-align:center;
+    cursor: pointer;
+    i{
+        color:$white;
+        font-size:18px;
+    }
 }

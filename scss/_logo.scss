@@ -1,0 +1,45 @@
+.logo{
+    border:2px solid #e2e2e2;
+    border-radius:20px;
+    margin:100px 0px;
+    padding:50px;
+    &__content{
+        width:100%;
+        @include display(space-between, center);
+        overflow: hidden;
+        img{
+            width:20%;
+            height:75px;
+            filter: grayscale(100%);
+            transition:filter 0.5 linear;
+            &:hover{
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+@media screen and (max-width:975px) {
+    .logo{
+        padding:50px 20px;
+    }
+    .logo__content img{
+        width:28%;
+    }
+    img:nth-child(4), img:nth-child(5){
+        display:none;
+    }
+    
+}
+@media screen and (max-width:759px) {
+    img:nth-child(3){
+        display:none;
+    }
+    .logo__content img{
+        width:40%;
+    }
+}
+@media screen and (max-width:459px) {
+    .logo{
+        display:none;
+    }
+}

@@ -309,7 +309,7 @@
         height:1400px;
     }
     .offer__content .offer__right__top--image img, .offer__content .offer__right__bottom--image img{
-        height:75%;
+        height:70%;
         width:50%;
     }
     .offer__content .offer__right__top--detail, .offer__content .offer__right__bottom--detail{
@@ -323,7 +323,10 @@
         padding:0px 20px;
     }
 }
-@media screen and (max-width:359px) {
+@media screen and (max-width:369px) {
+    .offer{
+        padding:50px 0px;
+    }
     .offer__content .offer__left--images img {
         height: 70%;
     }

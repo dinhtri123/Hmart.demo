@@ -464,7 +464,7 @@
 @media screen and (max-width:976px) {
     .products__new{
         width:305px;
-        height:428px;
+        height:400px;
     }
     .products .view__content{
         width:80%;
@@ -485,7 +485,7 @@
 @media screen and (max-width: 769px) {
     .products__new{
         width:240px;
-        height:350px;
+        height:370px;
         margin:0px;
         margin-bottom: 30px;
     }
@@ -495,6 +495,11 @@
     .products__infor__cart, .products__infor__wishlist, .products__infor__view, .products__infor__order{
         width:40px;
         height:42px;
+    }
+    .products__images img {
+        width: 45%;
+        height: 60%;
+        transition: 0.3s linear;
     }
 }
 @media screen and (max-width:510px) {
@@ -521,7 +526,7 @@
         font-size: 24px;
     }
     .products__list .btn_products{
-        font-size:14px;
+        font-size:16px;
         margin-right:0px;
         width:auto;
         padding:15px 20px;
@@ -537,6 +542,9 @@
     .products .view__images--items img{
         width:90px;
         height:100px;
+        
+        object-fit: contain;
+        padding: 5px;
     }
     .products .view__detail h2{
         font-size:28px;
@@ -557,7 +565,7 @@
 }
 @media screen and(max-width:415px){
     .products__list .btn_products{
-        font-size:13px;
+        font-size:15px;
         padding:15px 10px;
         height:auto;
     }
@@ -602,6 +610,8 @@
     .products .view__images--items img{
         height:90px;
         width:100px;
+        object-fit: contain;
+        padding: 5px;
     }
     .products .cart__content > span{
         font-size:14px;

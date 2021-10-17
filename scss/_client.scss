@@ -31,7 +31,7 @@
                     font-size:20px;
                     color:$black;
                     font-weight:400;
-                    padding-left:30px;
+                    padding: 0px 30px;
                     font-style: italic;
                     line-height:1.5;
                     word-spacing: 3px;
@@ -68,5 +68,41 @@
                 }
             }
         }
+    }
+}
+
+
+@media screen and (max-width: 975px) {
+    .client__content > h3{
+        font-size:36px;
+        margin-bottom: 20px;
+    }
+    .client__content > p{
+        font-size:16px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 779px) {
+    .client__content--title--right {
+        display:none;
+    }
+    .client__content--title--left{
+        width:100%;
+    }
+}
+@media screen and (max-width:489px) {
+    .client__content > h3{
+        font-size:30px;
+        margin-bottom: 20px;
+    }
+    .client__content--title--left > p, .client__content--title--right > p{
+        font-size:18px;
+        padding:0px 10px;
+    }
+    .client__content--title{
+        padding-top:30px;
+    }
+    .client__content--title--left .client--desc, .client__content--title--right .client--desc{
+        padding-left:0px;
     }
 }
