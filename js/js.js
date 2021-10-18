@@ -266,3 +266,13 @@ function view_close(){
 function view(){
     document.querySelector(".cart__view__products").style.display = "flex"
 }
+
+/// loading
+
+function loader(){
+    setTimeout(loading, 1000)
+}
+function loading(){
+    document.querySelector(".loading").style.opacity = "0";
+    document.querySelector(".loading").style.zIndex = "-999";
+}

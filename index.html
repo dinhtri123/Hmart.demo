@@ -10,9 +10,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
 </head>
-<body>
+<body onload="loader()">
+    <div class="loading">
+        <span></span>
+    </div>
    <header class="header">
         <div class="header__top">
             <div class="header__top--content">
@@ -1336,6 +1340,7 @@
        </div>
    </footer>
    <script src="./js/js.js"></script>
-   <script src="./js/sticky.js"></script>
+   <script src="./js/gsap.js"></script>
+   
 </body>
 </html>
